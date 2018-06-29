@@ -35,10 +35,10 @@ This readme assumes you have your developer environment ready to go and that you
 
 ### Deployment
 
-Serverless **will create the skill, the lambda function, and IAM roles for you**. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
+Serverless **will create the skill, the Lambda function, and IAM roles for you**. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
 
 1. Navigate to the project's root directory. you should see a file named 'skill.json' there.
-2. Deploy the skill and the lambda function in one step by running the following command:
+2. Deploy the skill and the Lambda function in one step by running the following command:
 
 	```bash
 	$ sls deploy
@@ -78,7 +78,7 @@ Serverless **will create the skill, the lambda function, and IAM roles for you**
 
 	Change the model definition to replace the invocation name and the sample phrase for each intent.  Repeat the operation for each locale you are planning to support.
 
-4. Remember to re-deploy your skill and lambda function for your changes to take effect.
+4. Remember to re-deploy your skill and Lambda function for your changes to take effect.
 
 	```bash
 	$ ask deploy
