@@ -5,9 +5,14 @@ module.exports = {
   handle(handlerInput, error) {
     console.log(`Error handled: ${error.message}`)
 
+    const speechText = `Sorry, I can\'t understand the command. Please say again.`
+    const reprompt = speechText
+    const cardTitle = `Error.`
+    const cardText = speechText
+
     return handlerInput.responseBuilder
-      .speak('Sorry, I can\'t understand the command. Please say again.')
-      .reprompt('Sorry, I can\'t understand the command. Please say again.')
+      .speak(speechText)
+      .reprompt(reprompt)
       .getResponse()
   }
 }

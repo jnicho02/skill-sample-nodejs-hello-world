@@ -6,10 +6,12 @@ module.exports = {
   },
   handle(handlerInput) {
     const speechText = 'Goodbye!'
+    const cardTitle = 'Cancel and stop'
+    const cardText = speechText
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .withSimpleCard(cardTitle, cardText)
       .getResponse()
   },
 }
